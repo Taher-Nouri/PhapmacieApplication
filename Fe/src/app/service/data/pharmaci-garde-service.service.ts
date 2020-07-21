@@ -12,25 +12,25 @@ export class PharmaciGardeServiceService {
 
 
   post(p:PharmacieGuard ){
-    return this.http.post(`http://localhost:8081/pharmacie`, p);
+    return this.http.post(`http://localhost:8080/pharmacie`, p);
   }
 
 
   getAllpharmacies( ) {
-    return this.http.get<PharmacieGuard[]>(`http://localhost:8081/pharmacies` );
+    return this.http.get<PharmacieGuard[]>(`http://localhost:8080/pharmacies` );
   }
 
 
   deletepharmacies(id :number ) {
-    return this.http.delete(`http://localhost:8081/pharmacies/${id}` );
+    return this.http.delete(`http://localhost:8080/pharmacies/${id}` );
   }
 
   getpharmacie(id :Number ) {
-    return this.http.get<PharmacieGuard>(`http://localhost:8081/pharmacies/${id}`);
+    return this.http.get<PharmacieGuard>(`http://localhost:8080/pharmacies/${id}`);
   }
 
   updatepharmacie(p:PharmacieGuard ) {
-    return this.http.put<PharmacieGuard>(`http://localhost:8081/pharmacies`,p);
+    return this.http.put<PharmacieGuard>(`http://localhost:8080/pharmacies`,p);
   }
 
 }
