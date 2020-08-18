@@ -15,29 +15,27 @@
     </div>
   </div>
     <div>
-        <label for="lieu">lieu:</label><br>
+        <label for="lieu">Place:</label><br>
         <input [(ngModel)]="pharmacie.lieu" type="text" id="lieu" name="lieu">
     </div>
     <div>
-      <label for="PharmacieName">Nom de Pharmacie:</label><br>
+      <label for="PharmacieName">Pharmacie name:</label><br>
       <input [(ngModel)]="pharmacie.pharmacieName" type="text" id="PharmacieName" name="PharmacieName">
     </div>
 
     <div>
-      <label for="Address2">Address 2:</label><br>
+      <label for="Address2">Location:</label><br>
       <input [(ngModel)]="pharmacie.adress2" type="text" id="Address2" name="Address2">
     </div>
 
     <div>
-        <label for="tel">tel :</label><br>
+        <label for="tel">Phone:</label><br>
         <input [(ngModel)]="pharmacie.tel" type="number" id="tel" name="tel">
     </div><br>
     <button type="submit" class="btn btn-primary" (click)="save()">Save</button>
     <button routerLink="" class="btn btn-info" >Back</button>
 
   </form>
-
-
 </div>
 
 
